@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import EmployeeList from './component/getEmployee';
@@ -23,8 +22,7 @@ function App() {
         <Route path='/add' element= {<AddEmployee/>}/>
       </Routes>
 
-      {/* <EmpolyeeList/> */}
-
+      
       
       
     </div>

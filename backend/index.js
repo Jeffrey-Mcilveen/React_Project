@@ -3,7 +3,6 @@ const cors = require("cors")
 const mongoose = require("mongoose");
 const dotenv = require('dotenv');
 const EmployeeModel = require("./models/employee")
-
 let app = express();
 app.use(express.json());
 app.use(cors());
@@ -15,10 +14,6 @@ mongoose.connect(url,
     usenewUrlparser:true,
     useUnifiedTopology:true
 })
-
-
-
-
 
 app.get('/', (req,res) =>{
     res.send("<h1>Testing- basic server working</h1>")
@@ -90,9 +85,6 @@ app.post('/employee', async (req, res) => {
         
     }
   })
-
-
-
 app.listen(process.env.PORT, () => {
     console.log("Server running at http://localhost:8071")
 })

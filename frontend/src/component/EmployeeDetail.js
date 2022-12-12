@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
-import axios from 'axios';
+
 import { useLocation,Link } from 'react-router-dom';
-import Table from 'react-bootstrap/Table';
+
 import ListGroup from 'react-bootstrap/ListGroup';
 
 
